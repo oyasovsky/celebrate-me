@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "source": "functions"
+  },
+  "hosting": {
+    "public": "web",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {"source": "/celebrate/**", "destination": "/index.html"}
+    ]
+  }
+}
