@@ -1,0 +1,15 @@
+{
+  "name": "celebrate-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "serve -s .",
+    "build": "echo build placeholder"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "firebase": "^10.6.0"
+  }
+}
