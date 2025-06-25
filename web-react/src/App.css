@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background: #181c24;
+  color: #f8f8ff;
+  font-family: 'Press Start 2P', cursive, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.glow-box {
+  border: 2px solid #00ffe7;
+  box-shadow: 0 0 20px #00ffe7, 0 0 40px #00ffe7aa;
+  border-radius: 20px;
+  padding: 2em;
+  margin: 2em auto;
+  background: rgba(24, 28, 36, 0.95);
+  transition: box-shadow 0.3s;
+}
+
+button {
+  background: #232946;
+  color: #fff;
+  border: 2px solid #ff26a6;
+  box-shadow: 0 0 10px #ff26a6, 0 0 20px #ff26a6aa;
+  border-radius: 12px;
+  padding: 1em 2em;
+  font-family: 'Press Start 2P', cursive, sans-serif;
+  font-size: 1em;
+  margin: 1em;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+button:hover {
+  background: #ff26a6;
+  color: #232946;
+  box-shadow: 0 0 20px #ff26a6, 0 0 40px #ff26a6cc;
+}
+
+h1, h2, h3 {
+  text-shadow: 0 0 8px #00ffe7, 0 0 16px #ff26a6;
+}
+
+/* Confetti animation */
+.confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: confetti-fall 3s linear infinite;
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-10vh) rotate(0deg); }
+  100% { transform: translateY(110vh) rotate(360deg); }
+}
